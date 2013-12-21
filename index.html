@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog - whoUX
+---
+
+<div class="wrapper">
+  <div class="basics">
+    <a href="/">
+      <span class="blog_image">
+        <i class="icon-home"></i>
+      </span>
+    </a>
+
+    <h1>whoUX</h1>
+    <p class="details">We love UX <span class="amp">&amp;</span> UI and we want to share projects we like.</p>
+  </div>
+
+  <span class="separator"></span>
+    
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>&raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span> </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,167 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Lora';
+  color: #222;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF; 
+  border-top: 15px solid #222;
+}
+
+span.amp {
+  font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+  font-size: 150%;
+  font-style:italic;
+  font-weight: 400;
+  color: #aaa !important;
+}
+
+span.separator {
+  display: block;
+  width: 48px;
+  height: 13px;
+  background: url(/blog/images/separator.png);
+  margin: 35px auto;
+}
+
+a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+.basics {
+  text-align: center;
+  margin-top: 80px;
+}
+
+span.blog_image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  background: #37BC9B;
+  margin: 0px auto 20px;
+}
+
+span.blog_image i {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 150px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.details {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #aaa;
+  margin: 7px 0;
+  letter-spacing: 3px;
+  font-variant:small-caps
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+
+  span.separator {
+    background: url(/blog/images/separator@2x.png);
+    background-size: 48px 13px;
+  }
+}
+
+ul.posts {
+  max-width: 700px;
+  margin: 50px auto;
+  list-style: none;
+  padding: 0 20px 50px;
+}
+
+ul.posts li {
+  color: #ccc;
+  font-size: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+ul.posts li span {
+  color: #ccc;
+}
+
+div.post {
+  color: #555;
+  font-size: 20px;
+  max-width: 700px;
+  padding: 0 20px 50px;
+  margin: 50px auto;
+  line-height: 30px;
+}
+
+div.post h1, div.post h2, div.post h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+div.post code {
+  color: #aaa;
+  font-family: Menlo, monospace, mono;
+}
+
+div.post pre * {
+  font-family: Menlo, monospace, mono;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.post pre {
+  overflow: auto;
+}
+
+div.post p {
+  margin: 20px 0;
+}
+
+.post pre {
+  padding: 20px;
+  background: #eee;
+}
+
+.post img {
+  display: block;
+  margin: 0 auto;  
+}
+
+.post blockquote {
+  padding-left: 30px;
+  border-left: 5px solid #eee;
+  margin: 40px 0;
+}
+
+.post blockquote p {
+  color: #777;
+}
